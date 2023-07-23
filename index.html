@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="count-con">
+<div class="con">
+   <div class="input-con">
+      <label for="time" >Time (HH:MM:SS):</label>
+      <input type="text" placeholder="00:00:00" class="time-input" id="time" pattern="[0-9]{2}:[0-9]{2}:[0-9]{2}"><br>
+  </div>
+  <div class="coun-timer">
+    <p id="demo" class="timer">Timer</p>
+  </div>
+    <div class="button-con" style=" color: #ccc;">
+      <button id="start">Start</button>
+      <button id="stop">Stop</button> 
+      <button id="reset">Reset</button> 
+      <button id="restart">Restart</button> 
+    </div>  
+</div>
+
+</div>
+  <script src="app.js"></script>
+</body>
+</html>
+  

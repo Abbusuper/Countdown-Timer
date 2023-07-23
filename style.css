@@ -1,0 +1,116 @@
+/* @import url(C:\Users\HP\Downloads\Web Development\Technohacks-Internship\led_real.ttf); */
+body{
+    background-color: #0F0F0F;
+    /* color: #602232; */
+}
+.count-con{
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.con{
+    display: flex;
+    height: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 72%;
+}
+.timer{
+    font-family: 'Orbitron', sans-serif;
+    color:#948D9B;
+}
+p {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0px;
+  }
+  .input-con{
+    font-size: 2rem;
+    color: #fff;
+  }
+  .time-input{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+    font-size: 2rem;
+    color: #232223;
+    text-align: center;
+  }
+  button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    font-weight: 700;
+    cursor: pointer;
+    --color: mediumseagreen;
+    background: var(--color);
+    /* outline-color: var(--color); */
+    color: #fff;    
+    transition: all .3s;
+}
+button:hover{
+    outline: var(--color) solid 2px;
+    animation: outline-pulse .75s infinite;
+  }
+button[id="start"]:hover{
+    outline: var(#182E1C) solid 2px;
+    animation: outline-pulse .75s infinite;
+}
+  button[id='start']:hover{
+    --color:#42CC57;
+  }
+  button[id="stop"]:hover{
+    --color: #FF352C;
+  }
+  button[id="reset"]:hover{
+    --color:  #2e2b2e;
+}
+  button[id="restart"]:hover{
+    --color: #2e2b2e;
+  }
+
+  
+
+  button[id="start"]:active {
+    --color: #182E1C;
+    outline-width: 0.2em;
+    animation: active 0.75s forwards
+  }
+  
+
+@keyframes outline-pulse {
+  from, to {
+    outline-offset: 0.3em;
+    outline-width: 0.12em;
+  }
+  70% {
+    outline-offset: 0.1em;
+    outline-width: 0.1em;
+  }
+}
+.button-con {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+}
+.coun-timer{
+    margin: 25vh  0;
+}
+button[id="start"] {
+    background-color: #182E1C;
+    border-color: #182E1C;
+    color: #42CC57;
+  }
+button[id="stop"] {
+    background-color: #351614;
+    border-color: #351614;
+    color: #FF352C;
+  }
+button[id="reset"],[id="restart"] {
+    background-color: #232223;
+    border-color: #232223;
+    color: #f8f0f0a9;
+  }
+  
